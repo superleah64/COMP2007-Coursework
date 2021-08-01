@@ -237,3 +237,33 @@ Received Import Request.
   path: Assets/Textures/Key.mat
   artifactKey: Guid(03f5de35ed865417ca57a039b6053333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Textures/Key.mat using Guid(03f5de35ed865417ca57a039b6053333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dec3175af676b6e89cea0d03d82b651') in 0.013078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2218.067179 seconds.
+  path: Assets/Textures/New Material.mat
+  artifactKey: Guid(72bd321fb532242f0b5ed91ebb59e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/New Material.mat using Guid(72bd321fb532242f0b5ed91ebb59e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4840f2a470c9e08e6b755df963b34e3') in 0.023793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.358017 seconds.
+  path: Assets/Textures/TempGrass.mat
+  artifactKey: Guid(72bd321fb532242f0b5ed91ebb59e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/TempGrass.mat using Guid(72bd321fb532242f0b5ed91ebb59e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f284584450aa08078c71467cd9a64195') in 0.007885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.185453 seconds.
+  path: Assets/Textures/Images
+  artifactKey: Guid(5d1dbc0fd276046c8953191db51f8d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Images using Guid(5d1dbc0fd276046c8953191db51f8d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de3bc51ab2c237c55df471001732b68') in 0.001677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1607.713773 seconds.
+  path: Assets/Textures/Key.mat
+  artifactKey: Guid(03f5de35ed865417ca57a039b6053333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Key.mat using Guid(03f5de35ed865417ca57a039b6053333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f7c467c44159c546286343385fa968') in 0.015447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Textures/TempGrass.mat
+  artifactKey: Guid(72bd321fb532242f0b5ed91ebb59e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/TempGrass.mat using Guid(72bd321fb532242f0b5ed91ebb59e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da7a1a1956b0aec456570708a20dbed1') in 0.006965 seconds 

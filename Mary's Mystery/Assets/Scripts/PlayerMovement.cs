@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float speed;
+    public float rotationSpeed;
+
     // Update is called once per frame
     void Update()
     {
@@ -10,6 +13,13 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = new Vector3(x, 0.0f, z);
 
-        transform.position += move;
+        transform.Translate(move * speed * Time.deltaTime, Space.World);
+
+        if (move != Vector3.zero)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(move, Vector3.up);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
     }
 }

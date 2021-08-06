@@ -4,48 +4,55 @@ using UnityEngine;
 
 public class AnimControl : MonoBehaviour
 {
-    public GameObject player;
+    Animator animator;
+    int isWalkingHash;
+    int isPickingUpHash;
+    int isWPickingUpHash;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        // game starts with the player in the idle animation
-        player.GetComponent<Animator>().Play("Idle");
+        animator = GetComponent<Animator>();
+        isWalkingHash = Animator.StringToHash("isWalking");
+        isPickingUpHash = Animator.StringToHash("isPickingUp");
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool isWalking = animator.GetBool(isWalkingHash);
+        bool isPickingUp = animator.GetBool(isPickingUpHash);
+        bool forwardPressed = Input.GetKey("w");
+        bool leftPressed = Input.GetKey("a");
+        bool rightPressed = Input.GetKey("s");
+        bool backPressed = Input.GetKey("d");
+        bool spacePressed = Input.GetKey("space");
 
         // if WASD keys are pressed, the walking animation is played
-        if (Input.GetButtonDown("WKey")
-        || Input.GetButtonDown("AKey")
-        || Input.GetButtonDown("SKey")
-        || Input.GetButtonDown("DKey"))
-
+        if (!isWalking && forwardPressed || leftPressed || rightPressed || backPressed)
         {
-            player.GetComponent<Animator>().Play("Walking");
+            animator.SetBool(isWalkingHash, true);
         }
 
-        // if the WASD keys are no longer pressed, the idle animation plays
-        else if (Input.GetButtonUp("WKey")
-        || Input.GetButtonUp("AKey")
-        || Input.GetButtonUp("SKey")
-        || Input.GetButtonUp("DKey"))
+        // if no buttons are pressed, walking animation is stopped
+        if (isWalking && !forwardPressed && !leftPressed && !rightPressed && !backPressed)
         {
-            player.GetComponent<Animator>().Play("Idle");
+            animator.SetBool(isWalkingHash, false);
         }
 
-        // if the space key is pressed, the pickup animation is played
-        if (Input.GetButtonDown("PickUp"))
+        if (!isWalking && spacePressed)
         {
-            player.GetComponent<Animator>().Play("PickUp");
+            animator.SetBool(isPickingUpHash, true);
         }
 
-        else if (Input.GetButtonUp("PickUp"))
+        if (isWalking && spacePressed)
         {
-            player.GetComponent<Animator>().Play("Idle");
+            animator.SetBool(isPickingUpHash, true);
+        }
+
+        if (!spacePressed)
+        {
+            animator.SetBool(isPickingUpHash, false);
         }
     }
 }

@@ -322,6 +322,7 @@
 "Assets/Scripts/AnimControl.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/CountDown.cs"
 "Assets/Scripts/GameOver.cs"
 "Assets/Scripts/HUD.cs"
 "Assets/Scripts/MainMenu.cs"

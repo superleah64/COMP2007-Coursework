@@ -322,6 +322,8 @@
 "Assets/Scripts/AnimControl.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/GameOver.cs"
+"Assets/Scripts/HUD.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/PickUp.cs"

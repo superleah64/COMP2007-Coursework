@@ -32,12 +32,13 @@ public class PickUp : MonoBehaviour
     // plays sound effect and destroys object
     private void PickUpObject()
     {
-        Destroy(gameObject);
+        StartCoroutine(startPickUp());
     }
 
-    IEnumerator startPickUp()
+    // prevents item from immediately being destroyed to match up with the animation
+    public IEnumerator startPickUp()
     {
-        yield return new WaitForSeconds(1);
-        PickUpObject();
+        yield return new WaitForSeconds(0.9f);
+        Destroy(gameObject);
     }
 }

@@ -322,7 +322,6 @@
 "Assets/Scripts/AnimControl.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CameraFollow.cs"
-"Assets/Scripts/CollectObjects.cs"
 "Assets/Scripts/CountDown.cs"
 "Assets/Scripts/GameController.cs"
 "Assets/Scripts/GameOver.cs"

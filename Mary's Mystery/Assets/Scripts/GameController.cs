@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public int collectable = 0;
+    public bool collectedAll = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -18,9 +19,18 @@ public class GameController : MonoBehaviour
     {
         if (collectable <= 0)
         {
+            collectedAll = true;
+        }
+
+        else
+        {
+            collectedAll = false;
+        }
+
+        if (collectedAll == true)
+        {
             YouWin();
         }
-        // plays sound effect and destroys object
         void YouWin()
         {
             StartCoroutine(WinScreen());
